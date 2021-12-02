@@ -1128,17 +1128,6 @@ Wire Wire Line
 Wire Wire Line
 	8150 2650 9000 2650
 $Comp
-L LED:WS2812B AD1
-U 1 1 6197A54B
-P 2850 6400
-F 0 "AD1" H 2900 6650 50  0000 L CNN
-F 1 "WS2812B" H 2850 6150 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2900 6100 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2950 6025 50  0001 L TNN
-	1    2850 6400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0136
 U 1 1 6197BC25
 P 2850 6850
@@ -1212,9 +1201,46 @@ F 3 "~" H 2400 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2400 6100 2400 6000
+	2400 6100 2400 6050
 Wire Wire Line
 	2550 6400 2400 6400
 Wire Wire Line
 	2400 6400 2400 6300
+$Comp
+L Connector:TestPoint TP2
+U 1 1 61B1FAEF
+P 2400 6400
+F 0 "TP2" H 2450 6600 50  0000 R CNN
+F 1 "TestPoint" H 2342 6517 50  0001 R CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 2600 6400 50  0001 C CNN
+F 3 "~" H 2600 6400 50  0001 C CNN
+	1    2400 6400
+	-1   0    0    1   
+$EndComp
+Connection ~ 2400 6400
+$Comp
+L Connector:TestPoint TP1
+U 1 1 61B2135A
+P 2400 6050
+F 0 "TP1" V 2400 6200 50  0000 L CNN
+F 1 "TestPoint" V 2450 6100 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 2600 6050 50  0001 C CNN
+F 3 "~" H 2600 6050 50  0001 C CNN
+	1    2400 6050
+	0    1    1    0   
+$EndComp
+Connection ~ 2400 6050
+Wire Wire Line
+	2400 6050 2400 6000
+$Comp
+L LED:WS2812B AD1
+U 1 1 6197A54B
+P 2850 6400
+F 0 "AD1" H 2900 6650 50  0000 L CNN
+F 1 "WS2812B" H 2850 6150 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2900 6100 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2950 6025 50  0001 L TNN
+	1    2850 6400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

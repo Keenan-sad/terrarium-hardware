@@ -754,7 +754,7 @@ U 1 1 619C01B4
 P 6550 1900
 F 0 "R1" V 6650 1950 50  0000 C CNN
 F 1 "R_Small" V 6450 1900 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 6550 1900 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6550 1900 50  0001 C CNN
 F 3 "~" H 6550 1900 50  0001 C CNN
 	1    6550 1900
 	0    -1   -1   0   
@@ -884,7 +884,7 @@ U 1 1 61BA8A74
 P 6600 3500
 F 0 "R3" V 6700 3550 50  0000 C CNN
 F 1 "R_Small" V 6500 3500 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 6600 3500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6600 3500 50  0001 C CNN
 F 3 "~" H 6600 3500 50  0001 C CNN
 	1    6600 3500
 	0    -1   -1   0   
@@ -984,7 +984,7 @@ U 1 1 619544C9
 P 7250 3600
 F 0 "R4" V 7350 3650 50  0000 C CNN
 F 1 "R_Small" V 7150 3600 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 7250 3600 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 7250 3600 50  0001 C CNN
 F 3 "~" H 7250 3600 50  0001 C CNN
 	1    7250 3600
 	0    -1   -1   0   
@@ -995,7 +995,7 @@ U 1 1 619684C1
 P 7200 2000
 F 0 "R2" V 7300 2050 50  0000 C CNN
 F 1 "R_Small" V 7100 2000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 7200 2000 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 7200 2000 50  0001 C CNN
 F 3 "~" H 7200 2000 50  0001 C CNN
 	1    7200 2000
 	0    -1   -1   0   
@@ -1128,17 +1128,6 @@ Wire Wire Line
 Wire Wire Line
 	8150 2650 9000 2650
 $Comp
-L LED:WS2812B AD1
-U 1 1 6197A54B
-P 2850 6400
-F 0 "AD1" H 2900 6650 50  0000 L CNN
-F 1 "WS2812B" H 2850 6150 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2900 6100 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2950 6025 50  0001 L TNN
-	1    2850 6400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0136
 U 1 1 6197BC25
 P 2850 6850
@@ -1149,8 +1138,6 @@ F 3 "" H 2850 6850 50  0001 C CNN
 	1    2850 6850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2850 6700 2850 6800
 $Comp
 L power:+5V #PWR0137
 U 1 1 61982203
@@ -1166,10 +1153,8 @@ Wire Wire Line
 	2850 6000 2850 6050
 Text GLabel 1200 4800 0    50   Input ~ 0
 G23
-Text GLabel 2400 6400 0    50   Input ~ 0
+Text GLabel 2400 6000 1    50   Input ~ 0
 G23
-Wire Wire Line
-	2400 6400 2550 6400
 $Comp
 L Device:C_Small C1
 U 1 1 6198D6DD
@@ -1192,7 +1177,6 @@ Wire Wire Line
 	3400 6500 3400 6800
 Wire Wire Line
 	3400 6800 2850 6800
-Connection ~ 2850 6800
 Wire Wire Line
 	2850 6800 2850 6850
 Wire Notes Line
@@ -1201,4 +1185,62 @@ Wire Notes Line
 	700  5750 3800 5750
 Wire Notes Line
 	700  7100 3800 7100
+Wire Wire Line
+	2850 6700 2850 6800
+Connection ~ 2850 6800
+NoConn ~ 3150 6400
+$Comp
+L Device:R_Small R5
+U 1 1 61AECE35
+P 2400 6200
+F 0 "R5" V 2500 6200 50  0000 C CNN
+F 1 "R_Small" V 2300 6200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2400 6200 50  0001 C CNN
+F 3 "~" H 2400 6200 50  0001 C CNN
+	1    2400 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 6100 2400 6050
+Wire Wire Line
+	2550 6400 2400 6400
+Wire Wire Line
+	2400 6400 2400 6300
+$Comp
+L Connector:TestPoint TP2
+U 1 1 61B1FAEF
+P 2400 6400
+F 0 "TP2" H 2450 6600 50  0000 R CNN
+F 1 "TestPoint" H 2342 6517 50  0001 R CNN
+F 2 "" H 2600 6400 50  0001 C CNN
+F 3 "~" H 2600 6400 50  0001 C CNN
+	1    2400 6400
+	-1   0    0    1   
+$EndComp
+Connection ~ 2400 6400
+$Comp
+L Connector:TestPoint TP1
+U 1 1 61B2135A
+P 2400 6050
+F 0 "TP1" V 2400 6200 50  0000 L CNN
+F 1 "TestPoint" V 2450 6100 50  0001 L CNN
+F 2 "" H 2600 6050 50  0001 C CNN
+F 3 "~" H 2600 6050 50  0001 C CNN
+	1    2400 6050
+	0    1    1    0   
+$EndComp
+Connection ~ 2400 6050
+Wire Wire Line
+	2400 6050 2400 6000
+$Comp
+L LED:WS2812B AD1
+U 1 1 6197A54B
+P 2850 6400
+F 0 "AD1" H 2900 6650 50  0000 L CNN
+F 1 "WS2812B" H 2850 6150 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2900 6100 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2950 6025 50  0001 L TNN
+	1    2850 6400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
