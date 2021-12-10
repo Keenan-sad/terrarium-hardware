@@ -911,7 +911,7 @@ L Connector:Screw_Terminal_01x02 S1
 U 1 1 61B1A99B
 P 9200 1250
 F 0 "S1" H 9280 1242 50  0000 L CNN
-F 1 "Heater 1 Out" H 9280 1151 50  0000 L CNN
+F 1 "Lamp 1 Out" H 9280 1151 50  0000 L CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9200 1250 50  0001 C CNN
 F 3 "~" H 9200 1250 50  0001 C CNN
 	1    9200 1250
@@ -922,7 +922,7 @@ L Connector:Screw_Terminal_01x02 S2
 U 1 1 61B1C1A7
 P 9200 2850
 F 0 "S2" H 9280 2842 50  0000 L CNN
-F 1 "Heater 2 Out" H 9280 2751 50  0000 L CNN
+F 1 "Heater 1 Out" H 9280 2751 50  0000 L CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9200 2850 50  0001 C CNN
 F 3 "~" H 9200 2850 50  0001 C CNN
 	1    9200 2850
@@ -1089,7 +1089,7 @@ L Connector:Screw_Terminal_01x02 S3
 U 1 1 61BD2F06
 P 9200 4400
 F 0 "S3" H 9280 4392 50  0000 L CNN
-F 1 "Lamp 1 Out" H 9280 4301 50  0000 L CNN
+F 1 "Heater 2 Out" H 9280 4301 50  0000 L CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9200 4400 50  0001 C CNN
 F 3 "~" H 9200 4400 50  0001 C CNN
 	1    9200 4400
