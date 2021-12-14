@@ -1,7 +1,7 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title ""
@@ -1196,4 +1196,124 @@ Wire Wire Line
 	7350 1250 7850 1250
 Wire Wire Line
 	7350 1700 7350 1900
+$Comp
+L Timer_RTC:DS3231M U1
+U 1 1 61B87BF1
+P 2750 8450
+F 0 "U1" H 3100 8800 50  0000 C CNN
+F 1 "DS3231M" H 3000 8100 50  0000 C CNN
+F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 2750 7850 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS3231.pdf" H 3020 8500 50  0001 C CNN
+	1    2750 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 61B962C0
+P 2750 9150
+F 0 "#PWR0107" H 2750 8900 50  0001 C CNN
+F 1 "GND" H 2755 8977 50  0000 C CNN
+F 2 "" H 2750 9150 50  0001 C CNN
+F 3 "" H 2750 9150 50  0001 C CNN
+	1    2750 9150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 8850 2750 9000
+$Comp
+L power:+3V3 #PWR0108
+U 1 1 61B9AE9E
+P 1600 7750
+F 0 "#PWR0108" H 1600 7600 50  0001 C CNN
+F 1 "+3V3" H 1615 7923 50  0000 C CNN
+F 2 "" H 1600 7750 50  0001 C CNN
+F 3 "" H 1600 7750 50  0001 C CNN
+	1    1600 7750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 8050 2750 7750
+NoConn ~ 3250 8250
+NoConn ~ 3250 8550
+NoConn ~ 2250 8650
+Text GLabel 1650 8250 0    50   Input ~ 0
+SCL
+Text GLabel 1650 8350 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	2650 7750 2650 8050
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 61BCBE03
+P 3650 8450
+F 0 "BT1" H 3768 8546 50  0000 L CNN
+F 1 "LIR2032" H 3768 8455 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_1058_1x2032" V 3650 8510 50  0001 C CNN
+F 3 "~" V 3650 8510 50  0001 C CNN
+	1    3650 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 8250 3650 7750
+Wire Wire Line
+	2750 7750 3650 7750
+Wire Wire Line
+	3650 8550 3650 9000
+Wire Wire Line
+	3650 9000 2750 9000
+Connection ~ 2750 9000
+Wire Wire Line
+	2750 9000 2750 9150
+$Comp
+L Device:R_Small R9
+U 1 1 61BDE005
+P 2050 7950
+F 0 "R9" H 2150 7950 50  0000 C CNN
+F 1 "4.7k" V 1950 7950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2050 7950 50  0001 C CNN
+F 3 "~" H 2050 7950 50  0001 C CNN
+	1    2050 7950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 61BDEC6F
+P 2000 8500
+F 0 "R8" V 2100 8500 50  0000 C CNN
+F 1 "4.7k" V 1900 8500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2000 8500 50  0001 C CNN
+F 3 "~" H 2000 8500 50  0001 C CNN
+	1    2000 8500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2250 8350 2200 8350
+Wire Wire Line
+	2250 8250 2050 8250
+Wire Wire Line
+	2050 7750 2050 7850
+Connection ~ 2050 7750
+Wire Wire Line
+	2050 7750 2650 7750
+Wire Wire Line
+	2050 8050 2050 8250
+Connection ~ 2050 8250
+Wire Wire Line
+	2050 8250 1650 8250
+Wire Wire Line
+	1600 7750 1800 7750
+Wire Wire Line
+	1900 8500 1800 8500
+Wire Wire Line
+	1800 8500 1800 7750
+Connection ~ 1800 7750
+Wire Wire Line
+	1800 7750 2050 7750
+Wire Wire Line
+	2100 8500 2200 8500
+Wire Wire Line
+	2200 8500 2200 8350
+Connection ~ 2200 8350
+Wire Wire Line
+	2200 8350 1650 8350
 $EndSCHEMATC
