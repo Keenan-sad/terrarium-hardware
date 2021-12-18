@@ -1183,7 +1183,7 @@
     (tags resistor)
     (path /61AECE35)
     (attr smd)
-    (fp_text reference R5 (at 0 -1.7145) (layer F.SilkS)
+    (fp_text reference R5 (at -3.6175 0) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 150ohm (at 0 1.82) (layer F.Fab)
