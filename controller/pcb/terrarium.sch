@@ -1019,9 +1019,9 @@ F 3 "~" V 3250 8560 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 8300 3250 7800
+	3250 8300 3250 8250
 Wire Wire Line
-	2350 7800 3250 7800
+	2350 7800 2650 7800
 Wire Wire Line
 	3250 8600 3250 9050
 Wire Wire Line
@@ -1456,4 +1456,30 @@ F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_
 	1    13400 2800
 	1    0    0    -1  
 $EndComp
+$Comp
+L Diode:1N47xxA D4
+U 1 1 61C05BEB
+P 2800 7800
+F 0 "D4" H 2750 7900 50  0000 L CNN
+F 1 "1N47xxA" H 2650 7700 50  0000 L CNN
+F 2 "Diode_SMD:D_1206_3216Metric" H 2800 7625 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 2800 7800 50  0001 C CNN
+	1    2800 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 7800 3250 7800
+$Comp
+L Switch:SW_Push SW3
+U 1 1 61C4BD91
+P 3250 8050
+F 0 "SW3" H 3250 8335 50  0000 C CNN
+F 1 "RESET RTC" H 3250 8244 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 3250 8250 50  0001 C CNN
+F 3 "~" H 3250 8250 50  0001 C CNN
+	1    3250 8050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 7850 3250 7800
 $EndSCHEMATC
