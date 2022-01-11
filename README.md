@@ -5,3 +5,7 @@
 - i2c LCD
 - i2c RTC DS3231M
 - i2c BUS pin headers
+
+![pcb v1.4 3d](./controller/pcb/image/v1.4_3d.png)
+
+![pcb v1.4](./controller/pcb/image/v1.4_front.png)
