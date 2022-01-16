@@ -1,0 +1,82 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L sensors:DHT22_Temperature_Humidity TH1
+U 1 1 61E33D50
+P 1950 1950
+F 0 "TH1" H 2228 2420 60  0000 L CNN
+F 1 "DHT22_Temperature_Humidity" H 2228 2314 60  0000 L CNN
+F 2 "" H 1950 1950 60  0001 C CNN
+F 3 "" H 1950 1950 60  0000 C CNN
+	1    1950 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Thermistor_NTC TH2
+U 1 1 61E35E03
+P 4250 1750
+F 0 "TH2" V 3960 1750 50  0000 C CNN
+F 1 "Thermistor_NTC" V 4051 1750 50  0000 C CNN
+F 2 "" H 4250 1800 50  0001 C CNN
+F 3 "~" H 4250 1800 50  0001 C CNN
+	1    4250 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_PHOTO R4
+U 1 1 61E395C0
+P 5250 1750
+F 0 "R4" V 4925 1750 50  0000 C CNN
+F 1 "R_PHOTO" V 5016 1750 50  0000 C CNN
+F 2 "" V 5300 1500 50  0001 L CNN
+F 3 "~" H 5250 1700 50  0001 C CNN
+	1    5250 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 61E3AEEB
+P 2850 2450
+F 0 "R1" V 2654 2450 50  0000 C CNN
+F 1 "R_Small" V 2745 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 2850 2450 50  0001 C CNN
+F 3 "~" H 2850 2450 50  0001 C CNN
+	1    2850 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 61E3C03F
+P 3300 2450
+F 0 "R2" V 3104 2450 50  0000 C CNN
+F 1 "R_Small" V 3195 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3300 2450 50  0001 C CNN
+F 3 "~" H 3300 2450 50  0001 C CNN
+	1    3300 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 61E3C572
+P 3750 2450
+F 0 "R3" V 3554 2450 50  0000 C CNN
+F 1 "R_Small" V 3645 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3750 2450 50  0001 C CNN
+F 3 "~" H 3750 2450 50  0001 C CNN
+	1    3750 2450
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
