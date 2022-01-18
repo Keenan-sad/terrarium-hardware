@@ -444,12 +444,12 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x02 S2
 U 1 1 61B1C1A7
-P 5050 3400
-F 0 "S2" H 5130 3392 50  0000 L CNN
-F 1 "Heater 1 Out" H 5130 3301 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5050 3400 50  0001 C CNN
-F 3 "~" H 5050 3400 50  0001 C CNN
-	1    5050 3400
+P 5050 3050
+F 0 "S2" H 5130 3042 50  0000 L CNN
+F 1 "Heater 1 Out" H 5130 2951 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5050 3050 50  0001 C CNN
+F 3 "~" H 5050 3050 50  0001 C CNN
+	1    5050 3050
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -467,9 +467,9 @@ Text GLabel 5600 6900 0    50   Input ~ 0
 220N
 Text GLabel 5600 7000 0    50   Input ~ 0
 220L
-Text GLabel 5250 3050 0    50   Input ~ 0
+Text GLabel 5250 3400 0    50   Input ~ 0
 220L
-Text GLabel 5250 3300 2    50   Input ~ 0
+Text GLabel 5250 2950 2    50   Input ~ 0
 220N
 $Comp
 L power:GND #PWR01
@@ -540,17 +540,17 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 S3
 U 1 1 61BD2F06
-P 5100 5350
-F 0 "S3" H 5180 5342 50  0000 L CNN
-F 1 "Heater 2 Out" H 5180 5251 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5100 5350 50  0001 C CNN
-F 3 "~" H 5100 5350 50  0001 C CNN
-	1    5100 5350
+P 5100 5000
+F 0 "S3" H 5180 4992 50  0000 L CNN
+F 1 "Heater 2 Out" H 5180 4901 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5100 5000 50  0001 C CNN
+F 3 "~" H 5100 5000 50  0001 C CNN
+	1    5100 5000
 	-1   0    0    1   
 $EndComp
-Text GLabel 5250 5000 0    50   Input ~ 0
+Text GLabel 5250 5350 0    50   Input ~ 0
 220L
-Text GLabel 5300 5250 2    50   Input ~ 0
+Text GLabel 5300 4900 2    50   Input ~ 0
 220N
 $Comp
 L LED:WS2812B ALED1
@@ -674,7 +674,7 @@ U 1 1 61BCBE03
 P 11000 6550
 F 0 "BT1" H 11118 6646 50  0000 L CNN
 F 1 "LIR2032" H 11118 6555 50  0000 L CNN
-F 2 "Battery:BatteryHolder_Keystone_1058_1x2032" V 11000 6610 50  0001 C CNN
+F 2 "Custom_Battery:CR2032_vertical" V 11000 6610 50  0001 C CNN
 F 3 "~" V 11000 6610 50  0001 C CNN
 	1    11000 6550
 	1    0    0    -1  
@@ -1508,23 +1508,17 @@ Connection ~ 4700 6550
 Wire Wire Line
 	4700 5800 5450 5800
 Wire Wire Line
-	5550 4100 5475 4100
-Wire Wire Line
 	5050 3850 5050 4100
-Connection ~ 5475 4100
 Wire Wire Line
 	5050 4250 5050 4600
 Wire Notes Line
 	6650 700  3050 700 
-Connection ~ 5475 4250
 Wire Wire Line
-	5475 4250 5500 4250
+	5300 5000 5475 5000
 Wire Wire Line
-	5300 5350 5475 5350
-Wire Wire Line
-	5250 5000 5475 5000
+	5250 5350 5475 5350
 $Comp
-L G3MB-202P:G3MB-202P K3
+L terrarium-rescue:G3MB-202P-G3MB-202P K3
 U 1 1 61E87FAC
 P 5900 5600
 F 0 "K3" V 5946 5471 50  0000 R CNN
@@ -1540,11 +1534,11 @@ Wire Wire Line
 Wire Wire Line
 	5475 4100 5050 4100
 Wire Wire Line
-	5250 3400 5475 3400
-Wire Wire Line
 	5250 3050 5475 3050
+Wire Wire Line
+	5250 3400 5475 3400
 $Comp
-L G3MB-202P:G3MB-202P K2
+L terrarium-rescue:G3MB-202P-G3MB-202P K2
 U 1 1 61F61190
 P 5900 3650
 F 0 "K2" V 5946 3521 50  0000 R CNN
@@ -1556,7 +1550,7 @@ F 4 "Omron" H 5900 3650 50  0001 L BNN "MANUFACTURER"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L G3MB-202P:G3MB-202P K1
+L terrarium-rescue:G3MB-202P-G3MB-202P K1
 U 1 1 61FA2CC9
 P 5850 1600
 F 0 "K1" V 5896 1471 50  0000 R CNN
@@ -1568,13 +1562,13 @@ F 4 "Omron" H 5850 1600 50  0001 L BNN "MANUFACTURER"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5250 1000 5425 1000
+	5250 1350 5425 1350
 Wire Wire Line
 	5100 2200 5425 2200
 Wire Wire Line
 	5100 2050 5425 2050
 Wire Wire Line
-	5250 1350 5425 1350
+	5250 1000 5425 1000
 Wire Wire Line
 	5100 2200 5100 2550
 Wire Wire Line
@@ -1635,19 +1629,19 @@ Wire Wire Line
 	3500 2750 3650 2750
 Text GLabel 3500 2750 0    50   Input ~ 0
 G5
-Text GLabel 5250 1250 2    50   Input ~ 0
+Text GLabel 5250 900  2    50   Input ~ 0
 220N
-Text GLabel 5250 1000 0    50   Input ~ 0
+Text GLabel 5250 1350 0    50   Input ~ 0
 220L
 $Comp
 L Connector:Screw_Terminal_01x02 S1
 U 1 1 61B1A99B
-P 5050 1350
-F 0 "S1" H 5130 1342 50  0000 L CNN
-F 1 "Lamp 1 Out" H 5130 1251 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5050 1350 50  0001 C CNN
-F 3 "~" H 5050 1350 50  0001 C CNN
-	1    5050 1350
+P 5050 1000
+F 0 "S1" H 5130 992 50  0000 L CNN
+F 1 "Lamp 1 Out" H 5130 901 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5050 1000 50  0001 C CNN
+F 3 "~" H 5050 1000 50  0001 C CNN
+	1    5050 1000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
