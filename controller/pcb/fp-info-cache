@@ -1,4 +1,4 @@
-19216088854167060
+19412822554422197
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -48768,6 +48768,13 @@ THT ceramic resonator filter DSS6
 0
 3
 3
+Custom_Battery
+CR2032_vertical
+
+
+0
+3
+3
 Diode_SMD
 D_0201_0603Metric
 Diode SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
@@ -58747,13 +58754,6 @@ NetTie
 NetTie-4_THT_Pad1.0mm
 Net tie, 4 pin, 1.0mm round THT pads
 net tie
-0
-4
-4
-Omron
-RELAY_G3MB-202P
-
-
 0
 4
 4
