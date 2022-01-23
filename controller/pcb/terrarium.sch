@@ -175,52 +175,6 @@ F 3 "~" H 4450 4600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4350 4600 4250 4600
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 61A0FEAA
-P 900 6300
-F 0 "H1" H 1000 6300 50  0000 L CNN
-F 1 "MountingHole" H 1000 6255 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 900 6300 50  0001 C CNN
-F 3 "~" H 900 6300 50  0001 C CNN
-	1    900  6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 61A115E3
-P 1300 6300
-F 0 "H2" H 1400 6300 50  0000 L CNN
-F 1 "MountingHole" H 1400 6255 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1300 6300 50  0001 C CNN
-F 3 "~" H 1300 6300 50  0001 C CNN
-	1    1300 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 61A11970
-P 1700 6300
-F 0 "H3" H 1800 6300 50  0000 L CNN
-F 1 "MountingHole" H 1800 6255 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1700 6300 50  0001 C CNN
-F 3 "~" H 1700 6300 50  0001 C CNN
-	1    1700 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 61A11DAB
-P 2100 6300
-F 0 "H4" H 2200 6300 50  0000 L CNN
-F 1 "MountingHole" H 2200 6255 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2100 6300 50  0001 C CNN
-F 3 "~" H 2100 6300 50  0001 C CNN
-	1    2100 6300
-	1    0    0    -1  
-$EndComp
-Text Notes 700  6050 0    50   ~ 0
-Mount holes
 Text Notes 3050 650  0    50   ~ 0
 Relays
 Wire Notes Line
@@ -555,8 +509,6 @@ F 3 "~" V 11000 6610 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10100 5500 10400 5500
-Wire Wire Line
 	11000 6750 10100 6750
 Connection ~ 10100 6750
 Wire Wire Line
@@ -758,17 +710,6 @@ F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 11000 5950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Switch:SW_Push SW3
-U 1 1 61C4BD91
-P 10600 5500
-F 0 "SW3" H 10600 5785 50  0000 C CNN
-F 1 "RTC BATTERY" H 10600 5694 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 10600 5700 50  0001 C CNN
-F 3 "~" H 10600 5700 50  0001 C CNN
-	1    10600 5500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Q_NPN_BEC Q3
 U 1 1 61BD2EC2
 P 4150 6800
@@ -803,20 +744,10 @@ Wire Wire Line
 Text GLabel 9600 5200 0    50   Input ~ 0
 G33
 Wire Wire Line
-	10800 5500 11000 5500
-Wire Wire Line
 	11000 5500 11000 5800
 Wire Wire Line
 	11000 6100 11000 6350
 Connection ~ 10100 5500
-Wire Notes Line
-	700  6100 700  6500
-Wire Notes Line
-	700  6500 2400 6500
-Wire Notes Line
-	2400 6500 2400 6100
-Wire Notes Line
-	700  6100 2400 6100
 Wire Notes Line
 	700  6800 2200 6800
 Wire Notes Line
@@ -824,7 +755,7 @@ Wire Notes Line
 Wire Notes Line
 	2200 8150 700  8150
 Wire Notes Line
-	8450 4700 8450 700 
+	7700 4700 7700 700 
 Text Notes 8450 650  0    50   ~ 0
 ESP32 WROOM 32
 Text Notes 700  8600 0    50   ~ 0
@@ -851,22 +782,7 @@ F 3 "" H 2450 8900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4550 9100 4550 9400
-Connection ~ 4550 9100
-Connection ~ 3850 9100
-Wire Wire Line
-	3850 9100 4550 9100
-Wire Wire Line
-	4250 9950 4550 9950
-Wire Wire Line
-	4550 9000 4550 9100
-Wire Wire Line
-	3850 9950 4050 9950
-Connection ~ 3850 9950
-Wire Wire Line
 	3850 9600 3850 9950
-Wire Wire Line
-	4550 9950 4550 9700
 Wire Wire Line
 	3300 9950 3850 9950
 Wire Wire Line
@@ -876,12 +792,12 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR010
 U 1 1 61CB24C1
-P 4550 9000
-F 0 "#PWR010" H 4550 8850 50  0001 C CNN
-F 1 "+3V3" H 4565 9173 50  0000 C CNN
-F 2 "" H 4550 9000 50  0001 C CNN
-F 3 "" H 4550 9000 50  0001 C CNN
-	1    4550 9000
+P 3850 9100
+F 0 "#PWR010" H 3850 8950 50  0001 C CNN
+F 1 "+3V3" H 3865 9273 50  0000 C CNN
+F 2 "" H 3850 9100 50  0001 C CNN
+F 3 "" H 3850 9100 50  0001 C CNN
+	1    3850 9100
 	-1   0    0    -1  
 $EndComp
 Connection ~ 3300 9950
@@ -912,23 +828,12 @@ $EndComp
 $Comp
 L Device:LED LED4
 U 1 1 61C6039A
-P 4550 9550
-F 0 "LED4" H 4650 9450 50  0000 R CNN
-F 1 "POWER" H 4650 9650 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 4550 9550 50  0001 C CNN
-F 3 "~" H 4550 9550 50  0001 C CNN
-	1    4550 9550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R12
-U 1 1 61C5EFC3
-P 4150 9950
-F 0 "R12" V 4250 9950 50  0000 C CNN
-F 1 "5k" V 4050 9950 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 4150 9950 50  0001 C CNN
-F 3 "~" H 4150 9950 50  0001 C CNN
-	1    4150 9950
+P 8300 3200
+F 0 "LED4" H 8400 3100 50  0000 R CNN
+F 1 "PWR" H 8400 3300 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 8300 3200 50  0001 C CNN
+F 3 "~" H 8300 3200 50  0001 C CNN
+	1    8300 3200
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1067,7 +972,7 @@ L Device:LED LED5
 U 1 1 61E277CA
 P 8650 8150
 F 0 "LED5" H 8750 8050 50  0000 R CNN
-F 1 "SENS" H 8750 8250 50  0000 R CNN
+F 1 "SNS" H 8750 8250 50  0000 R CNN
 F 2 "LED_SMD:LED_1206_3216Metric" H 8650 8150 50  0001 C CNN
 F 3 "~" H 8650 8150 50  0001 C CNN
 	1    8650 8150
@@ -1807,62 +1712,132 @@ Wire Notes Line
 $Comp
 L Device:LED LED6
 U 1 1 6243730D
-P 8700 2500
-F 0 "LED6" H 8800 2400 50  0000 R CNN
-F 1 "RX" H 8800 2600 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 8700 2500 50  0001 C CNN
-F 3 "~" H 8700 2500 50  0001 C CNN
-	1    8700 2500
+P 9100 3200
+F 0 "LED6" H 9200 3100 50  0000 R CNN
+F 1 "RX" H 9200 3300 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 9100 3200 50  0001 C CNN
+F 3 "~" H 9100 3200 50  0001 C CNN
+	1    9100 3200
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED LED7
 U 1 1 62438D58
-P 9100 2500
-F 0 "LED7" H 9200 2400 50  0000 R CNN
-F 1 "TX" H 9200 2600 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 9100 2500 50  0001 C CNN
-F 3 "~" H 9100 2500 50  0001 C CNN
-	1    9100 2500
+P 8700 3200
+F 0 "LED7" H 8800 3100 50  0000 R CNN
+F 1 "TX" H 8800 3300 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 8700 3200 50  0001 C CNN
+F 3 "~" H 8700 3200 50  0001 C CNN
+	1    8700 3200
 	0    -1   -1   0   
 $EndComp
-Text GLabel 8700 2350 1    50   Input ~ 0
+Text GLabel 9100 3350 3    50   Input ~ 0
 RX
-Text GLabel 9100 2350 1    50   Input ~ 0
+Text GLabel 8700 3350 3    50   Input ~ 0
 TX
 Wire Wire Line
-	8700 2650 8700 2850
+	9100 3050 9100 2850
 Wire Wire Line
-	8700 2850 8900 2850
-Wire Wire Line
-	9100 2850 9100 2650
+	8700 2850 8700 3050
 $Comp
-L Device:R_Small R19
+L Device:R_Small R12
 U 1 1 624CEFE7
-P 8900 3050
-F 0 "R19" V 9000 3050 50  0000 C CNN
-F 1 "10k" V 8800 3050 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 8900 3050 50  0001 C CNN
-F 3 "~" H 8900 3050 50  0001 C CNN
-	1    8900 3050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8900 2950 8900 2850
-Connection ~ 8900 2850
-Wire Wire Line
-	8900 2850 9100 2850
-$Comp
-L power:GND #PWR023
-U 1 1 624FB737
-P 8900 3300
-F 0 "#PWR023" H 8900 3050 50  0001 C CNN
-F 1 "GND" H 8905 3127 50  0000 C CNN
-F 2 "" H 8900 3300 50  0001 C CNN
-F 3 "" H 8900 3300 50  0001 C CNN
-	1    8900 3300
+P 8700 2650
+F 0 "R12" V 8800 2650 50  0000 C CNN
+F 1 "3k" V 8600 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 8700 2650 50  0001 C CNN
+F 3 "~" H 8700 2650 50  0001 C CNN
+	1    8700 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8900 3300 8900 3150
+	8700 2750 8700 2850
+Wire Wire Line
+	8700 2400 8700 2550
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 61EFC8AF
+P 8700 2400
+F 0 "#PWR0101" H 8700 2250 50  0001 C CNN
+F 1 "+3V3" H 8715 2573 50  0000 C CNN
+F 2 "" H 8700 2400 50  0001 C CNN
+F 3 "" H 8700 2400 50  0001 C CNN
+	1    8700 2400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 5500 11000 5500
+Connection ~ 3850 9100
+Wire Wire Line
+	8700 2850 8300 2850
+Wire Wire Line
+	8300 2850 8300 3050
+Connection ~ 8700 2850
+$Comp
+L power:GND #PWR0102
+U 1 1 62065A46
+P 8300 3350
+F 0 "#PWR0102" H 8300 3100 50  0001 C CNN
+F 1 "GND" H 8305 3177 50  0000 C CNN
+F 2 "" H 8300 3350 50  0001 C CNN
+F 3 "" H 8300 3350 50  0001 C CNN
+	1    8300 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2850 9100 2850
+Wire Notes Line
+	700  6100 2400 6100
+Wire Notes Line
+	2400 6500 2400 6100
+Wire Notes Line
+	700  6500 2400 6500
+Wire Notes Line
+	700  6100 700  6500
+Text Notes 700  6050 0    50   ~ 0
+Mount holes
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 61A11DAB
+P 2100 6300
+F 0 "H4" H 2200 6300 50  0000 L CNN
+F 1 "MountingHole" H 2200 6255 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2100 6300 50  0001 C CNN
+F 3 "~" H 2100 6300 50  0001 C CNN
+	1    2100 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 61A11970
+P 1700 6300
+F 0 "H3" H 1800 6300 50  0000 L CNN
+F 1 "MountingHole" H 1800 6255 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1700 6300 50  0001 C CNN
+F 3 "~" H 1700 6300 50  0001 C CNN
+	1    1700 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61A115E3
+P 1300 6300
+F 0 "H2" H 1400 6300 50  0000 L CNN
+F 1 "MountingHole" H 1400 6255 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1300 6300 50  0001 C CNN
+F 3 "~" H 1300 6300 50  0001 C CNN
+	1    1300 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61A0FEAA
+P 900 6300
+F 0 "H1" H 1000 6300 50  0000 L CNN
+F 1 "MountingHole" H 1000 6255 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 900 6300 50  0001 C CNN
+F 3 "~" H 900 6300 50  0001 C CNN
+	1    900  6300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
