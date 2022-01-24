@@ -406,4 +406,47 @@ F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" 
 	1    3700 3650
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61F397B4
+P 2450 1100
+AR Path="/61F397B4" Ref="#PWR?"  Part="1" 
+AR Path="/623D759E/61F397B4" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 2450 950 50  0001 C CNN
+F 1 "+5V" H 2465 1273 50  0000 C CNN
+F 2 "" H 2450 1100 50  0001 C CNN
+F 3 "" H 2450 1100 50  0001 C CNN
+	1    2450 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61F3BF57
+P 2450 1500
+AR Path="/61F3BF57" Ref="#PWR?"  Part="1" 
+AR Path="/623D759E/61F3BF57" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 2450 1250 50  0001 C CNN
+F 1 "GND" H 2455 1327 50  0000 C CNN
+F 2 "" H 2450 1500 50  0001 C CNN
+F 3 "" H 2450 1500 50  0001 C CNN
+	1    2450 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 UART?
+U 1 1 61F3F651
+P 2650 1250
+AR Path="/61F3F651" Ref="UART?"  Part="1" 
+AR Path="/623D759E/61F3F651" Ref="S4"  Part="1" 
+F 0 "S4" H 2730 1242 50  0000 L CNN
+F 1 "PWR" H 2730 1151 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical" H 2650 1250 50  0001 C CNN
+F 3 "~" H 2650 1250 50  0001 C CNN
+	1    2650 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 1100 2450 1250
+Wire Wire Line
+	2450 1500 2450 1350
 $EndSCHEMATC
