@@ -1,4 +1,4 @@
-update=12/2/2021 11:17:02 PM
+update=Tuesday, January 25, 2022 at 01:16:55 PM
 version=1
 last_client=kicad
 [general]
@@ -26,13 +26,13 @@ ERC_TestSimilarLabels=1
 version=1
 PageLayoutDescrFile=
 LastNetListRead=
-CopperLayerCount=2
+CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.2
+MinTrackWidth=0
 MinViaDiameter=0.4
 MinViaDrill=0.3
 MinMicroViaDiameter=0.2
@@ -41,9 +41,10 @@ MinHoleToHole=0.25
 TrackWidth1=0.25
 TrackWidth2=0.2
 TrackWidth3=0.4
-TrackWidth4=0.8
-TrackWidth5=2
-TrackWidth6=3
+TrackWidth4=0.6
+TrackWidth5=0.8
+TrackWidth6=2
+TrackWidth7=3
 ViaDiameter1=0.8
 ViaDrill1=0.4
 dPairWidth1=0.2
@@ -79,12 +80,12 @@ Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
-Type=0
-Enabled=0
+Type=1
+Enabled=1
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
-Type=0
-Enabled=0
+Type=1
+Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0
@@ -243,6 +244,17 @@ Enabled=0
 [pcbnew/Netclasses/Default]
 Name=Default
 Clearance=0.2
+TrackWidth=0.25
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=IC
+Clearance=0.1
 TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
